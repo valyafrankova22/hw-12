@@ -2,31 +2,36 @@ header {
   background-color: #ffffff;
   padding: 15px 0;
 
-  .row {
-    justify-content: space-between;
+
+  label[for=menu-trigger] {
+    display: none;
   }
 
-  nav {
-    ul {
+  #menu-trigger {
+    display: none;
+  }
+    nav {
       display: flex;
+      justify-content: space-between;
+
+      ul {
       list-style: none;
 
-      a {
-        padding: 10px 15px;
-        display: inline-block;
-        color: #333;
-        border-right: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 550;
-        transition: background-color 0.3s;
+          a {
+          padding: 10px 15px;
+          display: inline-block;
+          color: #333;
+          border-right: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 550;
+          transition: background-color 0.3s;
 
-        &:hover {
+          &:hover {
           color: white;
           background-color: var(--menu-bg-color);
-        }
-
+          }
+          }
       }
     }
-  }
 }

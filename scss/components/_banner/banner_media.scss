@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+  .banner {
+
+    .form {
+      flex-direction: column;
+      padding-bottom: 40px;
+
+      .item {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 767px) {
+
+  .banner {
+
+    h1 {
+      padding-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+  }
+
+}

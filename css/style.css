@@ -368,6 +368,11 @@ body {
   font-family: sans-serif;
 }
 
+:root {
+  --menu-bg-color: #ffbb42;
+  --main-bg-color: #709dca;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -379,20 +384,46 @@ body {
   padding: 0 15px;
 }
 
-:root {
-  --menu-bg-color: #ffbb42;
-  --main-bg-color: #709dca ;
+@media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
 }
-
+@media (max-width: 1000px) {
+  .container {
+    width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   background-color: #ffffff;
   padding: 15px 0;
 }
-header .row {
+header label[for=menu-trigger] {
+  display: none;
+}
+header #menu-trigger {
+  display: none;
+}
+header nav {
+  display: flex;
   justify-content: space-between;
 }
 header nav ul {
-  display: flex;
   list-style: none;
 }
 header nav ul a {
@@ -410,6 +441,40 @@ header nav ul a:hover {
   background-color: var(--menu-bg-color);
 }
 
+@media (max-width: 1000px) {
+  header {
+    position: relative;
+  }
+  header label[for=menu-trigger] {
+    display: flex;
+    padding: 0 5px;
+    justify-content: center;
+  }
+  header #menu-trigger {
+    display: none;
+  }
+  header input:checked + ul {
+    display: none;
+  }
+  header a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--menu-bg-color);
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  header nav ul {
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: var(--menu-bg-color);
+  }
+}
 .banner {
   background-color: var(--main-bg-color);
   padding-top: 100px;
@@ -432,14 +497,58 @@ header nav ul a:hover {
 }
 .banner .form {
   padding-bottom: 65px;
+  display: flex;
+  justify-content: center;
 }
-.banner .form .input {
+.banner .form .item {
+  width: 25%;
+  padding-right: 5px;
+}
+.banner .form input {
   display: inline-block;
-  width: 20%;
-  padding: 10px 35px;
+  width: 100%;
+  padding: 15px 80px 15px 10px;
   border: none;
   outline: none;
-  position: relative;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.banner .form .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--menu-bg-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.banner .laptop {
+  margin-bottom: -60px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .banner .form {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .banner .form .item {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .banner h1 {
+    padding-bottom: 10px;
+  }
+  .banner p {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,10 +10,13 @@
 
 <header>
     <div class="container">
-        <div class="row">
-            <img src="images/img-logo.png" alt="#">
             <nav>
-                <ul>
+                <img src="images/img-logo.png" alt="#">
+                <label for="menu-trigger">
+                    <a>Menu</a>
+                </label>
+                <input id="menu-trigger" type="checkbox" checked="checked">
+                 <ul class="row">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">Service</a></li>
                     <li><a href="index.html">About us</a></li>
@@ -22,9 +25,8 @@
                     <li><a href="index.html">Happy clients</a></li>
                     <li><a href="index.html">Contact us</a></li>
                 </ul>
-            </nav>
+             </nav>
         </div>
-    </div>
 </header>
 
 <main>
@@ -37,22 +39,27 @@
                     sed do eiusmod tempor incididunt ut labore</p>
             </div>
             <div class="form">
-                <label>
+                <div class="item">
+                    <label>
                     <input class="inp1" type="text" placeholder="Full name">
-                    <img class="input-img" src="images/name-иконка.png" alt="#">
-                </label>
+                    </label>
+                </div>
+                <div class="item">
                 <label>
-                    <input class="inp2" type="text" placeholder="Email Address">
-                    <img class="input-img" src="images/email-иконка.png" alt="#">
+                    <input class="inp2" type="email" placeholder="Email Address">
                 </label>
+                </div>
+                <div class="item">
                 <label>
-                    <input class="inp3" type="text" placeholder="Phone number">
-                    <img class="input-img" src="images/иконка-телефон.png" alt="#">
+                    <input class="inp3" type="tel" placeholder="Phone number">
                 </label>
-                <button>Request a quote</button>
+                </div>
+                <div class="item">
+                    <button class="btn">Request a quote</button>
+                </div>
             </div>
-            <div class="laptop">
-                <img src="images/laptop.png" alt="laptop">
+            <div>
+                <img class="laptop" src="images/laptop.png" alt="laptop">
             </div>
         </div>
     </div>
