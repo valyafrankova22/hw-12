@@ -4,16 +4,22 @@
 
     label[for=menu-trigger] {
         display: flex;
-        padding: 0 5px;
-          justify-content: center;
+        padding: 10px 20px;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+
         }
 
         #menu-trigger {
         display: none;
         }
 
-        input:checked + ul{
+        input:checked + nav ul {
         display: none;
+        }
+
+        input:checked + nav img {
+          display: none;
         }
 
 

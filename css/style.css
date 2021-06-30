@@ -447,13 +447,17 @@ header nav ul a:hover {
   }
   header label[for=menu-trigger] {
     display: flex;
-    padding: 0 5px;
-    justify-content: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
   header #menu-trigger {
     display: none;
   }
-  header input:checked + ul {
+  header input:checked + nav ul {
+    display: none;
+  }
+  header input:checked + nav img {
     display: none;
   }
   header a {
