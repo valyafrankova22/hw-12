@@ -16,11 +16,13 @@ header {
 
       ul {
       list-style: none;
+        align-items: center;
 
           a {
           padding: 10px 15px;
           display: inline-block;
-          color: #333;
+          color: #868686;
+            font-size: 15px;
           border-right: none;
           text-decoration: none;
           text-transform: uppercase;

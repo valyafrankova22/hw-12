@@ -425,11 +425,13 @@ header nav {
 }
 header nav ul {
   list-style: none;
+  align-items: center;
 }
 header nav ul a {
   padding: 10px 15px;
   display: inline-block;
-  color: #333;
+  color: #868686;
+  font-size: 15px;
   border-right: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -450,6 +452,7 @@ header nav ul a:hover {
     padding: 10px 20px;
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-items: center;
   }
   header #menu-trigger {
     display: none;
