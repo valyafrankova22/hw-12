@@ -1,0 +1,46 @@
+.services {
+  .title {
+      text-align: center;
+      margin-bottom: 90px;
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+
+
+
+  .services-block {
+    width: 50%;
+    padding-bottom: 60px;
+    display: flex;
+
+    &:nth-child(odd) {
+      padding-right: 80px;
+    }
+
+    .icon-services {
+      width: 15%;
+      padding-right: 30px;
+    }
+    .text-services {
+      width: 85%;
+
+      h4 {
+        font-size: 20px;
+        font-weight: 550;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+      }
+
+      p{
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+  }
+
+}

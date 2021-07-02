@@ -485,6 +485,7 @@ header nav ul a:hover {
 .banner {
   background-color: var(--main-bg-color);
   padding-top: 100px;
+  margin-bottom: 160px;
 }
 .banner .row {
   justify-content: center;
@@ -556,6 +557,41 @@ header nav ul a:hover {
   .banner p {
     text-align: center;
   }
+}
+.services .title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.services .title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.services .services-block {
+  width: 50%;
+  padding-bottom: 60px;
+  display: flex;
+}
+.services .services-block:nth-child(odd) {
+  padding-right: 80px;
+}
+.services .services-block .icon-services {
+  width: 15%;
+  padding-right: 30px;
+}
+.services .services-block .text-services {
+  width: 85%;
+}
+.services .services-block .text-services h4 {
+  font-size: 20px;
+  font-weight: 550;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.services .services-block .text-services p {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
