@@ -30,7 +30,7 @@
           text-decoration: none;
           text-transform: uppercase;
           color: white;
-          background-color: var(--menu-bg-color);
+          background-color: $menu-bg-color;
           cursor: pointer;
           border: none;
           outline: none;
@@ -43,7 +43,7 @@
             position: absolute;
             color: white;
             width: 100%;
-            background-color: var(--menu-bg-color);
+            background-color: $menu-bg-color;
           }
         }
 

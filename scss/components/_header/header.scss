@@ -27,11 +27,11 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 550;
-          transition: background-color 0.3s;
+          transition: background-color .3ms;
 
           &:hover {
           color: white;
-          background-color: var(--menu-bg-color);
+          background-color: $menu-bg-color;
           }
           }
       }
