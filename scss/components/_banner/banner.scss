@@ -8,12 +8,8 @@
   }
 
   h1 {
-    font-size: 35px;
-    color: white;
+    @include h-styles(35px, white, 600, 5px, uppercase);
     text-align: center;
-    font-weight: 600;
-    padding-bottom: 5px;
-    text-transform: uppercase;
   }
 
   p {
@@ -44,18 +40,8 @@
    }
 
     .btn {
-      display: inline-block;
-      padding: 15px 30px;
+      @include btns(15px, 30px, white, $menu-bg-color, none);
       width: 100%;
-      text-decoration: none;
-      font-size: 15px;
-      text-transform: uppercase;
-      color: white;
-      background-color: $menu-bg-color;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      border-radius: 3px;
     }
   }
 

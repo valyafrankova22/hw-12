@@ -1,0 +1,26 @@
+.price {
+  background-color: #e7edf3;
+  padding-top: 100px;
+
+ .text-price {
+   text-align: center;
+
+   h2 {
+     @include h-styles(30px, #394b50, 800, 10px, uppercase)
+   }
+   p {
+     color: #7b7b7b;
+   }
+
+  .price-block {
+    width: calc(100% / 3);
+
+    h4 {
+      @include h-styles(20px, #394b50, 400, 10px, uppercase)
+    }
+  }
+
+
+ }
+
+}

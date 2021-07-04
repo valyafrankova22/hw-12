@@ -19,19 +19,11 @@ header {
         align-items: center;
 
           a {
-          padding: 10px 15px;
-          display: inline-block;
-          color: #868686;
-            font-size: 15px;
-          border-right: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: 550;
-          transition: background-color .3ms;
+            @include btns(10px, 15px, #868686, white, none);
 
-          &:hover {
-          color: white;
-          background-color: $menu-bg-color;
+            &:hover {
+            color: white;
+            background-color: $menu-bg-color;
           }
           }
       }

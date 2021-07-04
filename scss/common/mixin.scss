@@ -1,0 +1,16 @@
+@mixin btns($btn-padding-1, $btn-padding-2, $btn-color, $btn-bg, $btn-border) {
+  padding: $btn-padding-1 $btn-padding-2;
+  color: $btn-color;
+  background-color: $btn-bg;
+  border: $btn-border;
+
+  @extend %buttons;
+}
+
+  @mixin h-styles($h-size, $h-color, $h-weight, $pad, $h-transform) {
+  font-size: $h-size;
+  color: $h-color;
+  font-weight: $h-weight;
+  padding-bottom: $pad;
+  text-transform: $h-transform;
+}

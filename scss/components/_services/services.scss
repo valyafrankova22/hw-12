@@ -4,15 +4,14 @@
   .title {
       text-align: center;
       margin-bottom: 90px;
+
     h2 {
-      font-size: 30px;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding-bottom: 10px;
+      @include h-styles(30px, #394b50, 800, 10px, uppercase);
+    }
+    p {
+      color: #7b7b7b
     }
   }
-
-
 
   .services-block {
     width: 50%;
@@ -31,11 +30,7 @@
       width: 85%;
 
       h4 {
-        font-size: 20px;
-        font-weight: 550;
-        color: #394b50;
-        text-transform: uppercase;
-        padding-bottom: 15px;
+        @include h-styles(20px, #394b50, 550, 15px, uppercase);
       }
 
       p{
