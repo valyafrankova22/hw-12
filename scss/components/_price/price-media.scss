@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+
+  .price {
+
+    .row {
+      height: auto;
+      flex-direction: column;
+    }
+    .price-block {
+      width: 100%;
+      height: auto;
+      padding: 50px 150px;
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .price {
+
+    .price-block {
+      padding: 50px 100px;
+    }
+
+  }
+}
+@media (max-width: 500px) {
+
+  .price {
+
+    .price-block {
+      padding: 50px 50px;
+    }
+
+  }
+
+}

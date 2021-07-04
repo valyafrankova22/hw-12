@@ -1,9 +1,16 @@
 .price {
   background-color: #e7edf3;
-  padding-top: 100px;
+  padding: 100px 0;
+
+
+  .row {
+    height: 500px;
+    align-items: center;
+  }
 
  .text-price {
    text-align: center;
+   padding-bottom: 50px;
 
    h2 {
      @include h-styles(30px, #394b50, 800, 10px, uppercase)
@@ -11,16 +18,88 @@
    p {
      color: #7b7b7b;
    }
+ }
 
   .price-block {
     width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
 
     h4 {
-      @include h-styles(20px, #394b50, 400, 10px, uppercase)
+      @include h-styles(20px, #394b50, 400, 10px, uppercase);
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      color: #7b7b7b;
+    }
+
+    .one, .two, .three, .four {
+      width: 100%;
+    }
+
+    .one {
+      font-size: 50px;
+      color: $menu-bg-color;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #e7edf3;
+      font-weight: 700;
+
+      .dollar {
+        font-size: 35px;
+        vertical-align: text-top;
+      }
+      p {
+        padding-top: 10px;
+        font-weight: normal;
+      }
+    }
+
+    .one {
+
+    }
+
+    .two, .three {
+      padding: 15px 0;
+      border-bottom: 2px solid #e7edf3;
+    }
+
+    .four {
+      padding: 15px 0;
+
+      p {
+        padding-bottom: 30px;
+      }
+
+      a {
+        @include btns(15px, 20px, white, $menu-bg-color, none)
+      }
+    }
+
+  }
+
+  .blue-block {
+    height: 100%;
+    background-color: $main-bg-color;
+
+    h4, p {
+      color: white;
+    }
+
+    .one {
+      color: white;
     }
   }
 
+  .white-block {
+    height: 88%;
+    background-color: white;
+  }
 
- }
+
+
 
 }

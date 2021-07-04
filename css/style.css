@@ -404,13 +404,13 @@ body {
     width: 100%;
   }
 }
-.about-us .right-about-us a, .banner .form .btn, header nav ul a {
+.price .price-block .four a, .about-us .right-about-us a, .banner .form .btn, header nav ul a {
   display: inline-block;
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 550;
-  transition: background-color 0.3ms;
+  transition: background-color 0.3s;
   cursor: pointer;
   outline: none;
   border-radius: 3px;
@@ -513,15 +513,27 @@ header nav ul a:hover {
 .banner .form .item {
   width: 25%;
   padding-right: 5px;
+  position: relative;
+}
+.banner .form .item i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  padding: 9px 8px;
+  color: #aaa;
 }
 .banner .form input {
   display: inline-block;
   width: 100%;
-  padding: 15px 80px 15px 10px;
+  padding: 15px 50px 15px 40px;
   border: none;
   outline: none;
   font-size: 15px;
   border-radius: 3px;
+}
+.banner .form input:focus + i {
+  color: dodgerblue;
+  transition: 0.3s;
 }
 .banner .form .btn {
   padding: 15px 30px;
@@ -673,16 +685,63 @@ header nav ul a:hover {
 }
 
 @media (max-width: 767px) {
+  .about-us:before {
+    display: none;
+  }
   .about-us .row {
     flex-direction: column;
+  }
+  .about-us .left-about-us,
+.about-us .right-about-us {
+    width: 100%;
+    height: 50%;
+  }
+  .about-us .right-about-us {
+    padding: 50px 0;
+    position: relative;
+  }
+  .about-us .right-about-us h3 {
+    padding-bottom: 20px;
+  }
+  .about-us .right-about-us p {
+    padding-bottom: 25px;
+  }
+  .about-us .left-about-us:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../images/about-us-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 500px) {
+  .about-us .right-about-us h3 {
+    padding-bottom: 15px;
+  }
+  .about-us .right-about-us p {
+    padding-bottom: 15px;
+  }
+  .about-us .right-about-us a {
+    padding: 10px 25px;
   }
 }
 .price {
   background-color: #e7edf3;
-  padding-top: 100px;
+  padding: 100px 0;
+}
+.price .row {
+  height: 500px;
+  align-items: center;
 }
 .price .text-price {
   text-align: center;
+  padding-bottom: 50px;
 }
 .price .text-price h2 {
   font-size: 30px;
@@ -694,15 +753,95 @@ header nav ul a:hover {
 .price .text-price p {
   color: #7b7b7b;
 }
-.price .text-price .price-block {
+.price .price-block {
   width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
 }
-.price .text-price .price-block h4 {
+.price .price-block h4 {
   font-size: 20px;
   color: #394b50;
   font-weight: 400;
   padding-bottom: 10px;
   text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.price .price-block p {
+  font-size: 16px;
+  color: #7b7b7b;
+}
+.price .price-block .one, .price .price-block .two, .price .price-block .three, .price .price-block .four {
+  width: 100%;
+}
+.price .price-block .one {
+  font-size: 50px;
+  color: #ffbb42;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e7edf3;
+  font-weight: 700;
+}
+.price .price-block .one .dollar {
+  font-size: 35px;
+  vertical-align: text-top;
+}
+.price .price-block .one p {
+  padding-top: 10px;
+  font-weight: normal;
+}
+.price .price-block .two, .price .price-block .three {
+  padding: 15px 0;
+  border-bottom: 2px solid #e7edf3;
+}
+.price .price-block .four {
+  padding: 15px 0;
+}
+.price .price-block .four p {
+  padding-bottom: 30px;
+}
+.price .price-block .four a {
+  padding: 15px 20px;
+  color: white;
+  background-color: #ffbb42;
+  border: none;
+}
+.price .blue-block {
+  height: 100%;
+  background-color: #709dca;
+}
+.price .blue-block h4, .price .blue-block p {
+  color: white;
+}
+.price .blue-block .one {
+  color: white;
+}
+.price .white-block {
+  height: 88%;
+  background-color: white;
+}
+
+@media (max-width: 992px) {
+  .price .row {
+    height: auto;
+    flex-direction: column;
+  }
+  .price .price-block {
+    width: 100%;
+    height: auto;
+    padding: 50px 150px;
+  }
+}
+@media (max-width: 767px) {
+  .price .price-block {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 500px) {
+  .price .price-block {
+    padding: 50px 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
