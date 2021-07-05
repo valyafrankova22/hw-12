@@ -1,0 +1,60 @@
+.newsletter {
+  padding-bottom: 50px;
+
+  .news-title {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h2 {
+      @include h-styles(30px, #394b50, 800, 10px, uppercase);
+    }
+    p {
+      color: #7b7b7b;
+    }
+  }
+
+  .row {
+    justify-content: center;
+
+    .news-item {
+      width: 33%;
+      position: relative;
+
+      &:nth-child(3n+1),
+      &:nth-child(3n+2) {
+        padding-right: 10px;
+      }
+
+
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 7px;
+        padding: 9px 8px;
+        color: #aaa;
+      }
+    }
+
+    input {
+      display: inline-block;
+      padding:15px 50px 15px 40px;
+      width: 100%;
+      border: 1px solid #7b7b7b;
+      outline: none;
+      font-size: 15px;
+      border-radius: 3px;
+
+      &:focus + i {
+        color: dodgerblue;
+        transition: .3s;
+      }
+    }
+
+
+    button {
+      @include btns(15px, 30px, white, $menu-bg-color, 1px solid $menu-bg-color);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+
+  .clients {
+
+    .clients-item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .client-img {
+        padding: 0 0 25px 0;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .clients {
+
+    .row {
+      flex-direction: column;
+    }
+
+    .clients-item {
+      width: 100%;
+    }
+  }
+
+}

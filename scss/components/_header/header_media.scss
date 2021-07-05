@@ -44,6 +44,14 @@
             color: white;
             width: 100%;
             background-color: $menu-bg-color;
+
+            a {
+              background-color: transparent;
+
+              &:hover {
+                color: white;
+              }
+            }
           }
         }
 

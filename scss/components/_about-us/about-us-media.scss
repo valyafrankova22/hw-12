@@ -10,56 +10,12 @@
       flex-direction: column;
     }
 
-    .left-about-us,
     .right-about-us{
       width: 100%;
-      height: 50%;
-    }
-    .right-about-us {
+      height: 100%;
       padding: 50px 0;
-      position: relative;
-      h3 {
-        padding-bottom: 20px;
-      }
-      p {
-        padding-bottom: 25px;
-      }
     }
 
-    .left-about-us:before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 50%;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-image: url("../images/about-us-img.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
-
-}
-
-@media (max-width: 500px) {
-
-  .about-us {
-
-    .right-about-us {
-
-      h3{
-        padding-bottom: 15px;
-      }
-      p {
-        padding-bottom: 15px;
-      }
-      a {
-        padding: 10px 25px;
-      }
-    }
-
-  }
 
 }

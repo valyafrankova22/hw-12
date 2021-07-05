@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+
+  .newsletter {
+
+    .row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .news-item {
+      width: 100%;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+
+  }
+
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -404,7 +405,7 @@ body {
     width: 100%;
   }
 }
-.price .price-block .four a, .about-us .right-about-us a, .banner .form .btn, header nav ul a {
+.newsletter .row button, .works .works-btn a, .price .price-block .four a, .about-us .right-about-us a, .banner .form .btn, header nav ul a {
   display: inline-block;
   font-size: 15px;
   text-decoration: none;
@@ -482,6 +483,12 @@ header nav ul a:hover {
     color: white;
     width: 100%;
     background-color: #ffbb42;
+  }
+  header nav ul a {
+    background-color: transparent;
+  }
+  header nav ul a:hover {
+    color: white;
   }
 }
 .banner {
@@ -691,49 +698,16 @@ header nav ul a:hover {
   .about-us .row {
     flex-direction: column;
   }
-  .about-us .left-about-us,
-.about-us .right-about-us {
-    width: 100%;
-    height: 50%;
-  }
   .about-us .right-about-us {
-    padding: 50px 0;
-    position: relative;
-  }
-  .about-us .right-about-us h3 {
-    padding-bottom: 20px;
-  }
-  .about-us .right-about-us p {
-    padding-bottom: 25px;
-  }
-  .about-us .left-about-us:before {
-    content: "";
-    position: absolute;
-    display: block;
     width: 100%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-image: url("../images/about-us-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media (max-width: 500px) {
-  .about-us .right-about-us h3 {
-    padding-bottom: 15px;
-  }
-  .about-us .right-about-us p {
-    padding-bottom: 15px;
-  }
-  .about-us .right-about-us a {
-    padding: 10px 25px;
+    height: 100%;
+    padding: 50px 0;
   }
 }
 .price {
   background-color: #e7edf3;
   padding: 100px 0;
+  margin-bottom: 150px;
 }
 .price .row {
   height: 500px;
@@ -841,6 +815,234 @@ header nav ul a:hover {
 @media (max-width: 500px) {
   .price .price-block {
     padding: 50px 50px;
+  }
+}
+.works {
+  margin-bottom: 150px;
+}
+.works .row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.works .works-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.works .works-title h2 {
+  font-size: 30px;
+  color: #394b50;
+  font-weight: 800;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.works .works-title p {
+  color: #7b7b7b;
+}
+.works .works-blocks {
+  display: flex;
+  padding-bottom: 90px;
+}
+.works .works-blocks .works-item {
+  text-align: center;
+  padding: 0 35px;
+  width: 25%;
+}
+.works .works-blocks .works-item img {
+  padding-bottom: 90px;
+}
+.works .works-blocks .works-item h4 {
+  font-size: 22px;
+  color: #394b50;
+  font-weight: 550;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.works .works-blocks .works-item p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #7b7b7b;
+}
+.works .works-btn a {
+  padding: 15px 25px;
+  color: white;
+  background-color: #ffbb42;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .works .works-blocks {
+    flex-wrap: wrap;
+  }
+  .works .works-blocks .works-item {
+    width: 50%;
+    padding-bottom: 40px;
+  }
+  .works .works-blocks .works-item img {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .works .works-blocks {
+    flex-direction: column;
+  }
+  .works .works-blocks .works-item {
+    width: 100%;
+    padding: 0 0 60px 0;
+  }
+}
+.clients {
+  background-color: #ffbb42;
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+.clients .row {
+  justify-content: space-between;
+}
+.clients .clients-title {
+  text-align: center;
+  padding-bottom: 50px;
+  color: white;
+}
+.clients .clients-title h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.clients .clients-item {
+  width: 49%;
+  display: flex;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 40px 30px;
+}
+.clients .clients-item .client-img {
+  width: 30%;
+  padding-right: 15px;
+}
+.clients .clients-item .client-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.clients .clients-item .client-text {
+  width: 70%;
+}
+.clients .clients-item .client-text .quotes {
+  quotes: "“" "”";
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 20px;
+}
+.clients .clients-item .client-text .quotes:before {
+  content: open-quote;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #222222;
+}
+.clients .clients-item .client-text .quotes:after {
+  content: close-quote;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #222222;
+}
+.clients .clients-item .client-text .c-name {
+  color: #7b7b7b;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.clients .clients-item .client-text .c-name span {
+  color: #ffbb42;
+}
+
+@media (max-width: 992px) {
+  .clients .clients-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients .clients-item .client-img {
+    padding: 0 0 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  .clients .row {
+    flex-direction: column;
+  }
+  .clients .clients-item {
+    width: 100%;
+  }
+}
+.newsletter {
+  padding-bottom: 50px;
+}
+.newsletter .news-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.newsletter .news-title h2 {
+  font-size: 30px;
+  color: #394b50;
+  font-weight: 800;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.newsletter .news-title p {
+  color: #7b7b7b;
+}
+.newsletter .row {
+  justify-content: center;
+}
+.newsletter .row .news-item {
+  width: 33%;
+  position: relative;
+}
+.newsletter .row .news-item:nth-child(3n+1), .newsletter .row .news-item:nth-child(3n+2) {
+  padding-right: 10px;
+}
+.newsletter .row .news-item i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  padding: 9px 8px;
+  color: #aaa;
+}
+.newsletter .row input {
+  display: inline-block;
+  padding: 15px 50px 15px 40px;
+  width: 100%;
+  border: 1px solid #7b7b7b;
+  outline: none;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.newsletter .row input:focus + i {
+  color: dodgerblue;
+  transition: 0.3s;
+}
+.newsletter .row button {
+  padding: 15px 30px;
+  color: white;
+  background-color: #ffbb42;
+  border: 1px solid #ffbb42;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .newsletter .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsletter .news-item {
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
   }
 }
 
